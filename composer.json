@@ -1,0 +1,51 @@
+{
+    "name": "domatskiy/boxberry",
+    "type": "library",
+    "description": "boxberry API",
+    "keywords": ["boxberry", "delivery"],
+    "homepage": "https://github.com/domatskiy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgeniy Domatskiy",
+            "role": "Developer"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"git",
+            "url":"https://github.com/domatskiy/boxberry"
+        },
+        {
+            "type":"package",
+            "package":{
+                "name":"domatskiy/boxberry",
+                "version":"0.1.0",
+                "source":{
+                    "type":"git",
+                    "url":"https://github.com/domatskiy/boxberry",
+                    "reference":"master"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Domatskiy\\": "src/"
+            }
+        },
+    "autoload-dev": {
+        "psr-4": {
+            "Domatskiy\\Tests\\": "tests/"
+            }
+        },
+    "require": {
+        "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "^6.2"
+        },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4.0",
+        "piwik/ini": "^1.0"
+        }
+}
